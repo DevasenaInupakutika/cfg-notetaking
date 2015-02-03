@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NoteViewController.h
 //  notetaking
 //
 //  Created by David Haber on 2/1/15.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Note.h"
 
-@interface ViewController : UIViewController
+@interface NoteViewController : UIViewController
 
+@property Note *note;
 
 @end
-
