@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430135FB1A80EAD200FC8BEF /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 430135FA1A80EAD200FC8BEF /* NoteViewController.m */; };
+		430135FE1A80EB0F00FC8BEF /* notetaking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 430135FC1A80EB0F00FC8BEF /* notetaking.xcdatamodeld */; };
 		435771AC1A7E7862004ABBDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771AB1A7E7862004ABBDF /* main.m */; };
 		435771AF1A7E7862004ABBDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771AE1A7E7862004ABBDF /* AppDelegate.m */; };
-		435771B21A7E7862004ABBDF /* notetaking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 435771B01A7E7862004ABBDF /* notetaking.xcdatamodeld */; };
 		435771B81A7E7862004ABBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435771B61A7E7862004ABBDF /* Main.storyboard */; };
 		435771BA1A7E7862004ABBDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435771B91A7E7862004ABBDF /* Images.xcassets */; };
 		435771BD1A7E7862004ABBDF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435771BB1A7E7862004ABBDF /* LaunchScreen.xib */; };
 		435771C91A7E7862004ABBDF /* notetakingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771C81A7E7862004ABBDF /* notetakingTests.m */; };
 		435771D81A7E8ADA004ABBDF /* NotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771D71A7E8ADA004ABBDF /* NotesTableViewController.m */; };
-		435771DB1A7E8AEE004ABBDF /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771DA1A7E8AEE004ABBDF /* NoteViewController.m */; };
 		435771DF1A7EAF5F004ABBDF /* NoteAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771DE1A7EAF5F004ABBDF /* NoteAdapter.m */; };
 		435771E21A7EAF81004ABBDF /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 435771E11A7EAF81004ABBDF /* Note.m */; };
 /* End PBXBuildFile section */
@@ -31,12 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430135F91A80EAD200FC8BEF /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = Controllers/NoteViewController.h; sourceTree = "<group>"; };
+		430135FA1A80EAD200FC8BEF /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = Controllers/NoteViewController.m; sourceTree = "<group>"; };
+		430135FD1A80EB0F00FC8BEF /* notetaking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notetaking.xcdatamodel; sourceTree = "<group>"; };
 		435771A61A7E7862004ABBDF /* notetaking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notetaking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435771AA1A7E7862004ABBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435771AB1A7E7862004ABBDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		435771AD1A7E7862004ABBDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		435771AE1A7E7862004ABBDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		435771B11A7E7862004ABBDF /* notetaking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notetaking.xcdatamodel; sourceTree = "<group>"; };
 		435771B71A7E7862004ABBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		435771B91A7E7862004ABBDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		435771BC1A7E7862004ABBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -45,8 +47,6 @@
 		435771C81A7E7862004ABBDF /* notetakingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notetakingTests.m; sourceTree = "<group>"; };
 		435771D61A7E8ADA004ABBDF /* NotesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesTableViewController.h; path = Controllers/NotesTableViewController.h; sourceTree = "<group>"; };
 		435771D71A7E8ADA004ABBDF /* NotesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesTableViewController.m; path = Controllers/NotesTableViewController.m; sourceTree = "<group>"; };
-		435771D91A7E8AEE004ABBDF /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
-		435771DA1A7E8AEE004ABBDF /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		435771DD1A7EAF5F004ABBDF /* NoteAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteAdapter.h; path = Helpers/NoteAdapter.h; sourceTree = "<group>"; };
 		435771DE1A7EAF5F004ABBDF /* NoteAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteAdapter.m; path = Helpers/NoteAdapter.m; sourceTree = "<group>"; };
 		435771E01A7EAF81004ABBDF /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = Models/Note.h; sourceTree = "<group>"; };
@@ -132,10 +132,10 @@
 		435771D21A7E824D004ABBDF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				430135F91A80EAD200FC8BEF /* NoteViewController.h */,
+				430135FA1A80EAD200FC8BEF /* NoteViewController.m */,
 				435771D61A7E8ADA004ABBDF /* NotesTableViewController.h */,
 				435771D71A7E8ADA004ABBDF /* NotesTableViewController.m */,
-				435771D91A7E8AEE004ABBDF /* NoteViewController.h */,
-				435771DA1A7E8AEE004ABBDF /* NoteViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		435771D51A7E8289004ABBDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				435771B01A7E7862004ABBDF /* notetaking.xcdatamodeld */,
+				430135FC1A80EB0F00FC8BEF /* notetaking.xcdatamodeld */,
 				435771E01A7EAF81004ABBDF /* Note.h */,
 				435771E11A7EAF81004ABBDF /* Note.m */,
 			);
@@ -277,13 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430135FB1A80EAD200FC8BEF /* NoteViewController.m in Sources */,
 				435771AF1A7E7862004ABBDF /* AppDelegate.m in Sources */,
 				435771D81A7E8ADA004ABBDF /* NotesTableViewController.m in Sources */,
 				435771AC1A7E7862004ABBDF /* main.m in Sources */,
 				435771DF1A7EAF5F004ABBDF /* NoteAdapter.m in Sources */,
-				435771DB1A7E8AEE004ABBDF /* NoteViewController.m in Sources */,
+				430135FE1A80EB0F00FC8BEF /* notetaking.xcdatamodeld in Sources */,
 				435771E21A7EAF81004ABBDF /* Note.m in Sources */,
-				435771B21A7E7862004ABBDF /* notetaking.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,13 +490,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		435771B01A7E7862004ABBDF /* notetaking.xcdatamodeld */ = {
+		430135FC1A80EB0F00FC8BEF /* notetaking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				435771B11A7E7862004ABBDF /* notetaking.xcdatamodel */,
+				430135FD1A80EB0F00FC8BEF /* notetaking.xcdatamodel */,
 			);
-			currentVersion = 435771B11A7E7862004ABBDF /* notetaking.xcdatamodel */;
-			path = notetaking.xcdatamodeld;
+			currentVersion = 430135FD1A80EB0F00FC8BEF /* notetaking.xcdatamodel */;
+			name = notetaking.xcdatamodeld;
+			path = Models/notetaking.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
