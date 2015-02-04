@@ -59,6 +59,10 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
+    // Sort results
+    NSSortDescriptor *sortByDateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date_created" ascending:NO];
+    [request setSortDescriptors:[NSArray arrayWithObject:sortByDateDescriptor]];
+    
     // Execute request, retrieve notes, handle error
     NSError *error;
     NSArray *array = [moc executeFetchRequest:request error:&error];

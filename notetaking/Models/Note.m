@@ -17,4 +17,11 @@
 @dynamic date_updated;
 @dynamic category;
 
+-(void)awakeFromInsert {
+    [super awakeFromInsert]; // call superclass method (important!)
+    
+    [self setDate_created:[NSDate date]];
+    [self setDate_updated:[NSDate date]];
+}
+
 @end
