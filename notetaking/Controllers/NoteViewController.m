@@ -33,13 +33,17 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
-    if (!self.note && [self.textView.text length] > 0) {
+    NoteAdapter *noteAdapter = [[NoteAdapter alloc] init];
+    
+    NSString *noteTitle = @"Title";
+    NSString *noteText = self.textView.text;
+    
+    if (!self.note && [noteText length] > 0) {
         // Create new note
-        NoteAdapter *noteAdapter = [[NoteAdapter alloc] init];
-        [noteAdapter createNotewithTitle:@"Title" withText:self.textView.text];
-    } else if ([self.textView.text length] > 0) {
+        [noteAdapter createNotewithTitle:noteTitle withText:noteText];
+    } else if ([noteText length] > 0) {
         // Update existing note
-        // TODO
+        [noteAdapter updateNote:self.note withTitle:noteTitle withText:noteText];
     }
     [self.navigationController popViewControllerAnimated:YES];
 }

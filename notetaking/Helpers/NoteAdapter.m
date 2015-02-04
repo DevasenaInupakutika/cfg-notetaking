@@ -32,8 +32,19 @@
     [self saveChanges];
 }
 
-- (void)removeNote:(NSString*)title {
-    // we'll do this one later
+- (void)updateNote:(Note*)note withTitle:(NSString*)title withText:(NSString*)text {
+    // Change object values
+    [note setTitle:title];
+    [note setText:text];
+    // Make changes persistent
+    [self saveChanges];
+}
+
+- (void)deleteNote:(Note*)note {
+    // We delete the note from the current context
+    [[self managedObjectContext] deleteObject:note];
+    // Make persistent
+    [self saveChanges];
 }
 
 - (NSArray*)allNotes {

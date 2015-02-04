@@ -15,7 +15,7 @@
 
 @interface NotesTableViewController ()
 
-@property NSArray *notes;
+@property NSMutableArray *notes;
 @property NoteAdapter *noteAdapter;
 
 @end
@@ -32,10 +32,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.noteAdapter = [[NoteAdapter alloc] init];
+    
+    // We need this for swipe to remove
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    self.notes = [self.noteAdapter allNotes];
+    self.notes = [NSMutableArray arrayWithArray:[self.noteAdapter allNotes]];
     [self.tableView reloadData];
 }
 
@@ -104,25 +107,25 @@
     return c;
 }
 
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+        // Get note object for this row
+        Note *note = [self.notes objectAtIndex:indexPath.row];
+        // Delete note object
+        [self.noteAdapter deleteNote:note];
+        // Delete note from array
+        [self.notes removeObjectAtIndex:indexPath.row];
+        // Delete the row from table view
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
-*/
 
 /*
 // Override to support rearranging the table view.
