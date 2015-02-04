@@ -32,6 +32,15 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Let text view be the first responder for this view. This means it will
+    // be active as soon as the view has appeared (user can start typing
+    // immediately)
+    [self.textView becomeFirstResponder];
+}
+
 - (IBAction)saveButtonPressed:(id)sender {
     NoteAdapter *noteAdapter = [[NoteAdapter alloc] init];
     
